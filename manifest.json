@@ -6,14 +6,20 @@
     "icons": {
         "64": "icons/wpp-block.png"
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "*://web.whatsapp.com/"
-            ],
-            "js": [
-                "app.js"
-            ]
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "clipboardWrite"
+    ],
+    "background": {
+        "scripts": [
+            "app.js"
+        ]
+    },
+    "content_scripts": [],
+    "browser_action": {
+        "default_icon": {
+            "64": "icons/wpp-block.png"
         }
-    ]
+    }
 }
