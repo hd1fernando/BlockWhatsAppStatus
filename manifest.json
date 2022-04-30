@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Block Whats App Status",
+    "description": "Block wpp status",
+    "version": "0.1.0",
+    "icons": {
+        "64": "icons/wpp-block.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://web.whatsapp.com/"
+            ],
+            "js": [
+                "app.js"
+            ]
+        }
+    ]
+}
